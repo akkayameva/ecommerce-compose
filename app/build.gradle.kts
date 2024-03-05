@@ -6,15 +6,17 @@ plugins {
 
 
 android {
-    namespace = "com.akkayameva.ecommerce"
-    compileSdk = 34
+
+    namespace = AppConfig.NAMESPACE
+    compileSdk = AppConfig.compileSdk
 
     defaultConfig {
-        applicationId = "com.akkayameva.ecommerce"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+
+        applicationId = AppConfig.APPLICATION_ID
+        minSdk = AppConfig.minSdk
+        targetSdk = AppConfig.targetSdk
+        versionCode = AppConfig.versionCode
+        versionName = AppConfig.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

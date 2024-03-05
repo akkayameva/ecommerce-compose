@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.akkayameva.core"
-    compileSdk = 34
+    namespace = AppConfig.CORE_NAMESPACE
+    compileSdk = AppConfig.compileSdk
 
     defaultConfig {
-        minSdk = 24
+        minSdk = AppConfig.targetSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
