@@ -44,7 +44,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.4.3"
     }
     packaging {
         resources {
@@ -56,6 +56,8 @@ android {
 dependencies {
 
     implementation(project(":core"))
+    implementation(libs.androidx.activity.ktx)
 
+    addSharedModuleDepencies()
     addAppModuleDependencies()
 }

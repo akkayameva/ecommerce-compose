@@ -8,7 +8,7 @@ android {
     compileSdk = AppConfig.compileSdk
 
     defaultConfig {
-        minSdk = AppConfig.targetSdk
+        minSdk = AppConfig.minSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,4 +34,5 @@ android {
 dependencies {
 
     addCoreModuleDependencies()
+    addSharedModuleDepencies()
 }
