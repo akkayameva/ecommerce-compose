@@ -1,5 +1,5 @@
 plugins {
-    id(BuildPlugins.ANDROID_APPLICATION)
+    id(BuildPlugins.ANDROID_LIBRARY)
     id(BuildPlugins.ANDROID_KOTLIN)
 }
 
