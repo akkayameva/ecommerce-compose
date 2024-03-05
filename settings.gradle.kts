@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "ecommerce"
 include(":app")
+
 include(":core")
