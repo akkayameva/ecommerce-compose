@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
 import com.akkayameva.core.domain.model.Product
+import com.akkayameva.ecommerce.utils.Extension.firstThirdWords
 
 @Composable
 fun ProductGrid(modifier: Modifier, listProduct: List<Product>) {
@@ -59,7 +60,7 @@ fun ProductGrid(modifier: Modifier, listProduct: List<Product>) {
                 ) {
                     Column(modifier = Modifier.weight(1f)) {
                         Spacer(modifier = Modifier.height(8.dp))
-                        Text(text = product.name, fontWeight = FontWeight.ExtraBold)
+                        Text(text = product.name.firstThirdWords(), fontWeight = FontWeight.ExtraBold)
                         Spacer(modifier = Modifier.height(12.dp))
                         androidx.compose.material3.Text(
                             text = "${product.price} ${product.currency}",
