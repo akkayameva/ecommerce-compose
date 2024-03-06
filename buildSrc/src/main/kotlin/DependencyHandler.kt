@@ -21,6 +21,7 @@ fun DependencyHandler.addAppModuleDependencies() {
     implementation(AppDependencies.COMPOSE_MATERIAL)
     implementation(AppDependencies.COMPOSE_MATERIAL_3)
     debugImplementation(AppDependencies.COMPOSE_UI_TOOLING)
+    implementation(AppDependencies.COMPOSE_COIL)
 }
 
 fun DependencyHandler.addCoreModuleDependencies() {
