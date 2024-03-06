@@ -7,6 +7,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -22,4 +23,10 @@ fun DetailTopBar() {
         backgroundColor = Color.Transparent,
         elevation = 0.dp
     )
+}
+
+@Composable
+@Preview(showBackground = true)
+fun DetailTopBarPreview(){
+    DetailTopBar()
 }

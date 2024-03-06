@@ -13,6 +13,7 @@ android {
         minSdk = AppConfig.minSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
