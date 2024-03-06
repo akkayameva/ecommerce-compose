@@ -27,6 +27,6 @@ fun BagScreen(){
 
 @Composable
 @Preview(showBackground = true)
-fun CartScreenPreview() {
+fun BagScreenPreview() {
     BagScreen()
 }
