@@ -30,6 +30,9 @@ fun DependencyHandler.addCoreModuleDependencies() {
     implementation(CoreDependencies.KTOR_ANDROID)
     implementation(CoreDependencies.KTOR_SERIALIZATION)
     implementation(CoreDependencies.KTOR_LOGGING)
+    implementation(CoreDependencies.ROOM_RUNTIME)
+    kapt(CoreDependencies.ROOM_COMPILER)
+    implementation(CoreDependencies.ROOM_KTX)
 }
 
 fun DependencyHandler.addSharedModuleDepencies(){

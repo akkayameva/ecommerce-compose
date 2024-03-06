@@ -8,4 +8,9 @@ object CoreDependencies {
     // Serialization
     const val KOTLINX_SERIALIZATION = "org.jetbrains.kotlinx:kotlinx-serialization-json:${BuildDependencyVersions.SERIALIZATION_VERSION}"
 
+    //Room
+    const val ROOM_RUNTIME = "androidx.room:room-runtime:${BuildDependencyVersions.ROOM_VERSION}"
+    const val ROOM_COMPILER = "androidx.room:room-compiler:${BuildDependencyVersions.ROOM_VERSION}"
+    const val ROOM_KTX = "androidx.room:room-ktx:${BuildDependencyVersions.ROOM_VERSION}"
+
 }

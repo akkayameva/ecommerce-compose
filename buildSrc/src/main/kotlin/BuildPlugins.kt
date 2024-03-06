@@ -4,4 +4,5 @@ object BuildPlugins {
     const val ANDROID_KOTLIN = "org.jetbrains.kotlin.android"
 
     const val KOTLIN_PARCELIZE = "kotlin-parcelize"
+    const val KOTLIN_KAPT = "kotlin-kapt"
 }
