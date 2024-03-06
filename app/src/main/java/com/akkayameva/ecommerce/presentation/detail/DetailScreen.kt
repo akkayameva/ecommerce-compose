@@ -41,13 +41,11 @@ fun DetailScreen(
                 .background(Color(0xFFE9E9E9))
                 .padding(all = 12.dp),
             painter = rememberAsyncImagePainter(model = product.imageUrl),
-            contentDescription = product.name + " Image",
+            contentDescription = product.name + " Image"
         )
         }
     }
 }
-
-
 
 @Composable
 @Preview(showBackground = true)
