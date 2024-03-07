@@ -1,34 +1,34 @@
 package com.akkayameva.ecommerce.presentation.home
 
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-
-import com.akkayameva.core.domain.model.Product
 import com.akkayameva.ecommerce.presentation.home.composables.HomeTopBar
-import com.akkayameva.ecommerce.presentation.home.composables.ProductGrid
+import org.koin.androidx.compose.getViewModel
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HomeScreen(){
-    //var listProduct = listOf<Product>()
-    val listProduct = Product.DUMMY
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = { HomeTopBar() }
     ) { paddingValues ->
-        ProductGrid(
-            modifier = Modifier.fillMaxSize()
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
                 .padding(paddingValues = paddingValues),
-            listProduct = listProduct )
+        ) {
+            val viewModel = getViewModel<HomeViewModel>()
+            viewModel.getAllProducts()
+
+        }
     }
 }
-
-
 
 @Composable
 @Preview(showBackground = true)
