@@ -5,4 +5,7 @@ object BuildPlugins {
 
     const val KOTLIN_PARCELIZE = "kotlin-parcelize"
     const val KOTLIN_KAPT = "kotlin-kapt"
+
+    const val KOTLIN_PLUGIN_SERIALIZATION = "org.jetbrains.kotlin.plugin.serialization"
+    const val KOTLINX_SERIALIZATION = "kotlinx-serialization"
 }
