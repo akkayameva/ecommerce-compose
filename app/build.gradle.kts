@@ -3,6 +3,7 @@ plugins {
     id(BuildPlugins.ANDROID_KOTLIN)
     id(BuildPlugins.DEVTOOL_KSP) version BuildDependencyVersions.KSP_VERSION
 }
+
 kotlin {
     sourceSets {
         debug {
@@ -14,7 +15,6 @@ kotlin {
     }
 
 }
-
 
 android {
     namespace = AppConfig.NAMESPACE
@@ -44,11 +44,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -66,7 +66,6 @@ android {
 dependencies {
 
     implementation(project(":core"))
-    implementation(libs.androidx.activity.ktx)
 
     addSharedModuleDepencies()
     addAppModuleDependencies()
