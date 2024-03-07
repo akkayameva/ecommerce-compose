@@ -4,7 +4,7 @@ import com.akkayameva.core.data.source.local.room.entity.ProductEntity
 import com.akkayameva.core.data.source.remote.dto.ProductDTO
 import com.akkayameva.core.domain.model.Product
 
-class DataMapper {
+object DataMapper {
     fun ProductDTO.toModel(): Product {
         return Product(
             id = id ?: 0,
