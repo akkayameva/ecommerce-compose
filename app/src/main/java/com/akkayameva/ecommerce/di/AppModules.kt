@@ -1,5 +1,9 @@
 package com.akkayameva.ecommerce.di
 
+import com.akkayameva.core.di.databaseModule
+import com.akkayameva.core.di.networkModule
+import com.akkayameva.core.di.dataSourceModule
+import com.akkayameva.core.di.repositoryModule
 import com.akkayameva.core.domain.usecase.bag.BagInteractor
 import com.akkayameva.core.domain.usecase.bag.BagUseCase
 import com.akkayameva.core.domain.usecase.detail.DetailInteractor
@@ -26,5 +30,9 @@ val viewModelModule = module {
 
 val listModules = listOf(
     useCaseModule,
-    viewModelModule
+    viewModelModule,
+    databaseModule,
+    networkModule,
+    dataSourceModule,
+    repositoryModule,
 )
