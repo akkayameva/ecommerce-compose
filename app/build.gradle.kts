@@ -1,12 +1,22 @@
 plugins {
     id(BuildPlugins.ANDROID_APPLICATION)
     id(BuildPlugins.ANDROID_KOTLIN)
+    id(BuildPlugins.DEVTOOL_KSP) version BuildDependencyVersions.KSP_VERSION
+}
+kotlin {
+    sourceSets {
+        debug {
+            kotlin.srcDir("build/generated/ksp/debug/kotlin")
+        }
+        release {
+            kotlin.srcDir("build/generated/ksp/release/kotlin")
+        }
+    }
 
 }
 
 
 android {
-
     namespace = AppConfig.NAMESPACE
     compileSdk = AppConfig.compileSdk
 

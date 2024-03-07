@@ -12,6 +12,9 @@ fun DependencyHandler.testImplementation(dependencyNotation: String): Dependency
     add("testImplementation", dependencyNotation)
 fun DependencyHandler.androidTestImplementation(dependencyNotation: String): Dependency? =
     add("androidTestImplementation", dependencyNotation)
+
+fun DependencyHandler.ksp(dependencyNotation: String): Dependency? =
+    add("ksp", dependencyNotation)
 fun DependencyHandler.addAppModuleDependencies() {
     implementation(AppDependencies.LIFECYCLE_RUNTIME_KTX)
     implementation(AppDependencies.COMPOSE_UI)
@@ -22,6 +25,8 @@ fun DependencyHandler.addAppModuleDependencies() {
     implementation(AppDependencies.COMPOSE_MATERIAL_3)
     debugImplementation(AppDependencies.COMPOSE_UI_TOOLING)
     implementation(AppDependencies.COMPOSE_COIL)
+    implementation(AppDependencies.COMPOSE_DESTINATIONS)
+    ksp(AppDependencies.COMPOSE_DESTINATIONS_KSP)
 }
 
 fun DependencyHandler.addCoreModuleDependencies() {

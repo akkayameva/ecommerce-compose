@@ -8,4 +8,5 @@ object BuildPlugins {
 
     const val KOTLIN_PLUGIN_SERIALIZATION = "org.jetbrains.kotlin.plugin.serialization"
     const val KOTLINX_SERIALIZATION = "kotlinx-serialization"
+    const val DEVTOOL_KSP = "com.google.devtools.ksp"
 }
