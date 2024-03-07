@@ -14,6 +14,7 @@ import com.akkayameva.ecommerce.ui.theme.EcommerceTheme
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.text.style.TextAlign
 import com.akkayameva.ecommerce.presentation.home.HomeScreen
+import com.ramcosta.composedestinations.DestinationsNavHost
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomeScreen()
+                   // DestinationsNavHost(navGraph = NavGraphs.root)
                 }
             }
         }
