@@ -1,4 +1,4 @@
-package com.akkayameva.ecommerce.home.composables
+package com.akkayameva.ecommerce.presentation.home.composables
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image

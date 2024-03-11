@@ -1,4 +1,4 @@
-package com.akkayameva.ecommerce.home
+package com.akkayameva.ecommerce.presentation.home
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,8 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
 import com.akkayameva.core.domain.model.Product
-import com.akkayameva.ecommerce.home.composables.HomeTopBar
-import com.akkayameva.ecommerce.home.composables.ProductGrid
+import com.akkayameva.ecommerce.presentation.home.composables.HomeTopBar
+import com.akkayameva.ecommerce.presentation.home.composables.ProductGrid
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

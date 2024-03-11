@@ -13,7 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.akkayameva.ecommerce.ui.theme.EcommerceTheme
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.text.style.TextAlign
-import com.akkayameva.ecommerce.home.HomeScreen
+import com.akkayameva.ecommerce.presentation.home.HomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
